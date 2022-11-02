@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap");
+
+:root {
+    --black: #333;
+    --red: #7e1135;
+    --grey: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth !important;
+    font-family: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--black);
+    font-family: sans-serif;
+}
+
+.App {
+    line-height: 1.5;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    background-color: var(--red);
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+
+.uppercase {
+    text-transform: Uppercase;
+}
+
+/* remove animation for people who have them off */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

@@ -1,0 +1,139 @@
+.principles-part {
+    width: 100%;
+    background-color: #f4f4f4;
+    align-content: center;
+}
+
+.writte {
+    display: flex;
+    padding: 2rem;
+    padding-bottom: 3rem;
+}
+
+.red-col {
+    background-color: #7e1135;
+    margin-bottom: 5vh;
+}
+
+.quote {
+    position: relative;
+    max-width: 720px;
+    margin: 80px auto;
+}
+
+.quote-text {
+    font-size: 22px;
+    font-style: italic;
+    position: relative;
+    color: #f4f4f4;
+    text-align: center;
+    line-height: 1.15;
+    margin: 0;
+    border: 2px solid #f4f4f4;
+    border: solid 2px;
+    border-radius: 15px;
+    padding: 25px;
+}
+.quote-text::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #f4f4f4;
+    border-radius: 0 0 50px 0;
+    width: 60px;
+    height: 60px;
+    bottom: -60px;
+    left: 200px;
+    border-bottom: none;
+    border-left: none;
+    z-index: 3;
+}
+.quote-text::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    border: 6px solid #7e1135;
+    bottom: -3px;
+    left: 220px;
+    z-index: 2;
+}
+
+.principles {
+    width: 75%;
+    display: grid;
+    flex-flow: column;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.tech,
+.ingrediences {
+    padding: 1rem;
+    float: left;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.ingrediences {
+    margin: 2rem;
+}
+
+.tech {
+    margin-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.round-image {
+    width: 160px;
+    border-radius: 50%;
+    margin-top: -90px;
+    border: none;
+}
+
+.tech p,
+.ingrediences p {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.tech p:last-child,
+.ingrediences p:last-child {
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 45rem) {
+    .ingrediences,
+    .tech {
+        margin: 2rem;
+    }
+    .ingrediences {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .principles {
+        grid-template-columns: 1fr;
+    }
+    .tech {
+        margin-top: 5rem;
+    }
+}
+
+.deer-image {
+    max-width: 70%;
+    max-height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
